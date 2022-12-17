@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
+    basename: "/homepage",
     element: <Home />,
     errorElement: <ErrorPage />,
     children: [

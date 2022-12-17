@@ -7,15 +7,19 @@
 }
 .first {
   background-image: url("../../../res/forest.jpg");
+  /* background-color: red; */
 }
 .second {
   background-image: url("../../../res/mountain.jpg");
+  /* background-color: blue; */
 }
 .third {
   background-image: url("../../../res/wasaga3.jpg");
+  /* background-color: green; */
 }
 .fourth {
   background-image: url("../../../res/us1.jpg");
+  /* background-color: yellow; */
 }
 
 .block {
