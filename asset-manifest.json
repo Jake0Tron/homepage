@@ -1,19 +1,15 @@
 {
   "files": {
-    "main.css": "/jake0tron.github.io/homepage/static/css/main.67193bec.css",
+    "main.css": "/jake0tron.github.io/homepage/static/css/main.0d9321b2.css",
     "main.js": "/jake0tron.github.io/homepage/static/js/main.d621dcc4.js",
     "static/js/787.1e34f6f6.chunk.js": "/jake0tron.github.io/homepage/static/js/787.1e34f6f6.chunk.js",
-    "static/media/forest.jpg": "/jake0tron.github.io/homepage/static/media/forest.90cad47153d3906d5157.jpg",
-    "static/media/mountain.jpg": "/jake0tron.github.io/homepage/static/media/mountain.496b19a50377a3d60d47.jpg",
-    "static/media/wasaga3.jpg": "/jake0tron.github.io/homepage/static/media/wasaga3.a2def430dd0d2ed9f108.jpg",
-    "static/media/us1.jpg": "/jake0tron.github.io/homepage/static/media/us1.ec8c9e04e14b792d9f3b.jpg",
     "index.html": "/jake0tron.github.io/homepage/index.html",
-    "main.67193bec.css.map": "/jake0tron.github.io/homepage/static/css/main.67193bec.css.map",
+    "main.0d9321b2.css.map": "/jake0tron.github.io/homepage/static/css/main.0d9321b2.css.map",
     "main.d621dcc4.js.map": "/jake0tron.github.io/homepage/static/js/main.d621dcc4.js.map",
     "787.1e34f6f6.chunk.js.map": "/jake0tron.github.io/homepage/static/js/787.1e34f6f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67193bec.css",
+    "static/css/main.0d9321b2.css",
     "static/js/main.d621dcc4.js"
   ]
 }
