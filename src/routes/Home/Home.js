@@ -9,7 +9,6 @@ function Home() {
       <ul>
         <li>set up routing (side/top bar)</li>
         <li>route to small components</li>
-        <li>set up parallax home component</li>
       </ul>
       <Parallax />
     </div>

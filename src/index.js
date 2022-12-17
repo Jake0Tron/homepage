@@ -13,7 +13,13 @@ const router = createBrowserRouter([
     element: <Home />,
     errorElement: <ErrorPage />,
     children: [
-      // TODO: Route to subcomponent pages for routing
+      // TODO: Route to subcomponent pages for routing, ie:
+      /* 
+      {
+        path: "contacts/:contactId",
+        element: <Contact />,
+      }
+      */
     ],
   },
 ]);
