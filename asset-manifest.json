@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.afd3b98e.css",
+    "main.js": "/static/js/main.0ecc9a0d.js",
+    "static/js/787.1e34f6f6.chunk.js": "/static/js/787.1e34f6f6.chunk.js",
+    "static/media/forest.jpg": "/static/media/forest.90cad47153d3906d5157.jpg",
+    "static/media/mountain.jpg": "/static/media/mountain.496b19a50377a3d60d47.jpg",
+    "static/media/wasaga3.jpg": "/static/media/wasaga3.a2def430dd0d2ed9f108.jpg",
+    "static/media/us1.jpg": "/static/media/us1.ec8c9e04e14b792d9f3b.jpg",
+    "index.html": "/index.html",
+    "main.afd3b98e.css.map": "/static/css/main.afd3b98e.css.map",
+    "main.0ecc9a0d.js.map": "/static/js/main.0ecc9a0d.js.map",
+    "787.1e34f6f6.chunk.js.map": "/static/js/787.1e34f6f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afd3b98e.css",
+    "static/js/main.0ecc9a0d.js"
+  ]
+}
