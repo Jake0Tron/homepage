@@ -1,15 +1,11 @@
 import React from "react";
-import { Parallax } from "../../components";
+import { Parallax, Header } from "../../components/lib";
 import "./Home.css";
 
 function Home() {
   return (
     <div className="Home">
-      TODO:
-      <ul>
-        <li>set up routing (side/top bar)</li>
-        <li>route to small components</li>
-      </ul>
+      <Header />
       <Parallax />
     </div>
   );

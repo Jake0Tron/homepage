@@ -1,0 +1,19 @@
+@import "../../../../theme.scss";
+.newsTitle {
+  .title {
+    font-size: x-large;
+  }
+  .nameDate {
+    display: flex;
+    align-items: baseline;
+    font-size: small;
+  }
+
+  .description {
+    font-size: small;
+    margin: $size-x-small;
+  }
+  .readUrl {
+    font-size: small;
+  }
+}

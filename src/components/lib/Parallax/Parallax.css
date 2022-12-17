@@ -1,0 +1,29 @@
+.parallaxSection {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 900px;
+}
+.first {
+  background-image: url("../../../res/forest.jpg");
+}
+.second {
+  background-image: url("../../../res/mountain.jpg");
+}
+.third {
+  background-image: url("../../../res/wasaga3.jpg");
+}
+.fourth {
+  background-image: url("../../../res/us1.jpg");
+}
+
+.block {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import ErrorPage from "./ErrorPage";
 import "./index.css";
-import { Home } from "./routes";
+import { Home, NewsFeed } from "./routes";
 
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -13,6 +13,10 @@ const router = createBrowserRouter([
     element: <Home />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: "/news",
+        element: <NewsFeed />,
+      },
       // TODO: Route to subcomponent pages for routing, ie:
       /* 
       {

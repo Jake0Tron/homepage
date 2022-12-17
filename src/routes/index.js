@@ -1,2 +1,3 @@
 import Home from "./Home/";
-export { Home };
+import { NewsFeed } from "./News";
+export { Home, NewsFeed };

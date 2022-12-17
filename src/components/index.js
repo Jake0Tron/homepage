@@ -1,3 +1,3 @@
-import Parallax from "./Parallax";
+import Parallax from "./lib/Parallax";
 
 export { Parallax };
