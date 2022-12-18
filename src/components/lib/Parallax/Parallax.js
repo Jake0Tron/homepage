@@ -1,18 +1,23 @@
 import React from "react";
 import "./Parallax.css";
 
-const Parallax = () => {
-  return (
-    <>
-      <div className="block">Chasing her down the path</div>
-      <div className="parallaxSection first"></div>
-      <div className="block">to the tallest mountain</div>
-      <div className="parallaxSection second"></div>
-      <div className="block">can't leave the beach</div>
-      <div className="parallaxSection third"></div>
-      <div className="block">check out my nipple</div>
-      <div className="parallaxSection fourth"></div>
-    </>
-  );
+const FOURTH_YEAR = [
+  { url: "forest.jpg", message: "poop" },
+  { url: "mountain.jpg", message: "poop" },
+];
+
+const createParallaxContent = (content) =>
+  content.map((c) => (
+    <div key={`${c.url}`}>
+      <div
+        className="parallaxSection"
+        style={{ backgroundImage: `url(${c.url})` }}
+      ></div>
+      <div className="block">{c.message}</div>
+    </div>
+  ));
+
+const Parallax = ({ content = FOURTH_YEAR }) => {
+  return <>{createParallaxContent(content)}</>;
 };
 export default Parallax;

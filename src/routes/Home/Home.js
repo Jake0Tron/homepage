@@ -6,7 +6,9 @@ function Home() {
   return (
     <div className="Home">
       <Header />
+      <div>start</div>
       <Parallax />
+      <div>end</div>
     </div>
   );
 }
