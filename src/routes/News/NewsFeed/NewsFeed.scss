@@ -3,8 +3,9 @@
 .newsFeed {
   overflow: hidden;
   height: 100%;
-  min-width: $container-size-med;
-  max-width: $container-size-x-large;
+  width: 100%;
+  // min-width: $container-size-med;
+  // max-width: $container-size-x-large;
 
   .buttonContainer {
     display: flex;

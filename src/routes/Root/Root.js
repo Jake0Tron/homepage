@@ -5,7 +5,6 @@ const Root = () => {
   return (
     <>
       <div id="sidebar">
-        <h1>Homepage</h1>
         <nav>
           <ul>
             <li>
@@ -14,10 +13,14 @@ const Root = () => {
             <li>
               <Link to={`us`}>Us</Link>
             </li>
+            <li>
+              <Link to={`gallery`}>Gallery</Link>
+            </li>
           </ul>
         </nav>
+        <h1>Homepage</h1>
       </div>
-      <div id="detail">
+      <div id="rootContent">
         <Outlet />
       </div>
     </>

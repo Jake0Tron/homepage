@@ -1,29 +1,35 @@
 import React from "react";
 import "./Parallax.css";
 
-const FOURTH_YEAR = [
-  { url: "forest.jpg", message: "poop" },
-  { url: "mountain.jpg", message: "poop" },
-];
+const CONTENT_TYPE = {
+  img: ({ url, alt }) => (
+    <div
+      className="parallaxSection"
+      style={{ backgroundImage: `url(${url})` }}
+      alt={alt}
+    ></div>
+  ),
+  text: ({ message }) => <div className="block">{message}</div>,
+};
 
-const createParallaxContent = (content) =>
-  content.map((c) => (
-    <div key={`${c.url}`}>
-      <div
-        className="parallaxSection"
-        style={{ backgroundImage: `url(${c.url})` }}
-      ></div>
-      <div className="block">{c.message}</div>
-    </div>
-  ));
+const FOURTH_YEAR = [
+  { type: "img", url: "forest.jpg", alt: "Forest, so magical" },
+  { type: "text", message: "Forest, so magical" },
+  { type: "img", url: "mountain.jpg", alt: "Mountain, how majestic" },
+  { type: "text", message: "Mountain, how majestic" },
+  { type: "img", url: "wasaga3.jpg", alt: "Mountain, how majestic" },
+  { type: "text", message: "Mountain, how majestic" },
+  { type: "img", url: "us1.jpg", alt: "Mountain, how majestic" },
+  { type: "text", message: "Mountain, how majestic" },
+];
 
 const Parallax = ({ content = FOURTH_YEAR }) => {
   return (
-    <>
-      <div>Start</div>
-      {createParallaxContent(content)}
-      <div>End</div>
-    </>
+    <div className="parallaxContent">
+      {content.map((c) => (
+        <div key={`${c.url}`}>{CONTENT_TYPE[c.type](c)}</div>
+      ))}
+    </div>
   );
 };
 export default Parallax;

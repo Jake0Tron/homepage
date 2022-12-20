@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import NewsArticle from "../NewsArticle";
 import { Loading, SearchBar } from "../../../components/lib";
 import "./NewsFeed.scss";
@@ -30,7 +30,7 @@ const NewsFeed = () => {
     // TODO: pull existing topics from Localstorage
   }, []);
 
-  const onSearchButtonClick = () => {
+  const onSearchButtonClick = useCallback(() => {
     const searchTopics = new Set(topics);
     setIsLoadingData(true);
     if (
@@ -47,35 +47,45 @@ const NewsFeed = () => {
       setNewsData(newsData.articles);
       setIsLoadingData(false);
     });
-  };
+  }, [latestTopic, topics]);
 
-  const onAddTopicClick = (val) => {
-    if (val.length > 0) {
+  const onAddTopicClick = useCallback(
+    (val) => {
+      if (val.length > 0) {
+        const uniqTopics = new Set(topics);
+        uniqTopics.add(val);
+        setTopics(Array.from(uniqTopics));
+        setLatestTopic("");
+      }
+    },
+    [topics]
+  );
+
+  const removeTopic = useCallback(
+    (topic) => {
       const uniqTopics = new Set(topics);
-      uniqTopics.add(val);
+      uniqTopics.delete(topic);
       setTopics(Array.from(uniqTopics));
-      setLatestTopic("");
-    }
-  };
+    },
+    [topics]
+  );
 
-  const removeTopic = (topic) => {
-    const uniqTopics = new Set(topics);
-    uniqTopics.delete(topic);
-    setTopics(Array.from(uniqTopics));
-  };
+  const onSearchKeyDown = useCallback(
+    (e) => {
+      // if we hit enter, add a topic
+      if (e.which === 13 && !e.ctrlKey) {
+        onAddTopicClick(latestTopic);
+      } else if (e.which === 13 && e.ctrlKey) {
+        // ctrl+enter to search
+        onSearchButtonClick();
+      }
+    },
+    [latestTopic]
+  );
 
-  const onSearchKeyDown = (e) => {
-    // if we hit enter, add a topic
-    if (e.which === 13 && !e.ctrlKey) {
-      onAddTopicClick(latestTopic);
-    } else if (e.which === 13 && e.ctrlKey) {
-      // ctrl+enter to search
-      onSearchButtonClick();
-    }
-  };
   return (
     <div className="container shadowed newsFeed">
-      <div>News Feed</div>
+      <h1>News Feed</h1>
       <SearchBar
         onChange={(e) => setLatestTopic(e.target.value)}
         value={latestTopic}

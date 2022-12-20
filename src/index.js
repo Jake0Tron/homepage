@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import Root from "./routes/Root/Root";
 import { Parallax } from "./components/lib";
+import Gallery from "./components/lib/Gallery";
 
 /**
  * createRoutesFromElements(
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "us",
         element: <Parallax />,
+      },
+      {
+        path: "gallery",
+        element: <Gallery />,
       },
     ],
   },

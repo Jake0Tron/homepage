@@ -1,13 +1,23 @@
+.parallaxContent {
+  max-height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
 .parallaxSection {
+  scroll-snap-align: center;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   min-height: 900px;
 }
 
 .block {
-  height: 600px;
+  scroll-snap-align: start center;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
