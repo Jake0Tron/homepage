@@ -18,6 +18,12 @@ const createParallaxContent = (content) =>
   ));
 
 const Parallax = ({ content = FOURTH_YEAR }) => {
-  return <>{createParallaxContent(content)}</>;
+  return (
+    <>
+      <div>Start</div>
+      {createParallaxContent(content)}
+      <div>End</div>
+    </>
+  );
 };
 export default Parallax;
