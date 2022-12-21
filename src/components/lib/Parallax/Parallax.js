@@ -15,10 +15,13 @@ const CONTENT_TYPE = {
 const FOURTH_YEAR = [
   { type: "img", url: "forest.jpg", alt: "Forest, so magical" },
   { type: "text", message: "Forest, so magical" },
+
   { type: "img", url: "mountain.jpg", alt: "Mountain, how majestic" },
   { type: "text", message: "Mountain, how majestic" },
+
   { type: "img", url: "wasaga3.jpg", alt: "Mountain, how majestic" },
   { type: "text", message: "Mountain, how majestic" },
+
   { type: "img", url: "us1.jpg", alt: "Mountain, how majestic" },
   { type: "text", message: "Mountain, how majestic" },
 ];
