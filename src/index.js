@@ -6,10 +6,11 @@ import { Home, NewsFeed } from "./routes";
 
 import reportWebVitals from "./reportWebVitals";
 import {
-  createBrowserRouter,
+  // createBrowserRouter,
   RouterProvider,
-  Route,
-  createRoutesFromElements,
+  // Route,
+  // createRoutesFromElements,
+  createHashRouter,
 } from "react-router-dom";
 import Root from "./routes/Root/Root";
 import { Parallax } from "./components/lib";
@@ -23,9 +24,10 @@ import Gallery from "./components/lib/Gallery";
   )
  */
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
+    exact: true,
     errorElement: <ErrorPage />,
     element: <Root />,
     children: [
