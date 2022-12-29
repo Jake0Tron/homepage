@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jake0tron.github.io/homepage/static/css/main.b8b70f0f.css",
-    "main.js": "/jake0tron.github.io/homepage/static/js/main.43a066cd.js",
-    "static/js/787.1e34f6f6.chunk.js": "/jake0tron.github.io/homepage/static/js/787.1e34f6f6.chunk.js",
-    "index.html": "/jake0tron.github.io/homepage/index.html",
-    "main.b8b70f0f.css.map": "/jake0tron.github.io/homepage/static/css/main.b8b70f0f.css.map",
-    "main.43a066cd.js.map": "/jake0tron.github.io/homepage/static/js/main.43a066cd.js.map",
-    "787.1e34f6f6.chunk.js.map": "/jake0tron.github.io/homepage/static/js/787.1e34f6f6.chunk.js.map"
+    "main.css": "./static/css/main.b8b70f0f.css",
+    "main.js": "./static/js/main.c5ee668f.js",
+    "static/js/787.1e34f6f6.chunk.js": "./static/js/787.1e34f6f6.chunk.js",
+    "index.html": "./index.html",
+    "main.b8b70f0f.css.map": "./static/css/main.b8b70f0f.css.map",
+    "main.c5ee668f.js.map": "./static/js/main.c5ee668f.js.map",
+    "787.1e34f6f6.chunk.js.map": "./static/js/787.1e34f6f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b8b70f0f.css",
-    "static/js/main.43a066cd.js"
+    "static/js/main.c5ee668f.js"
   ]
 }
