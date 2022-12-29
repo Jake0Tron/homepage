@@ -1,37 +1,30 @@
 import React from "react";
+import { AnniversaryPhotoData } from "../../../data/photoData";
 import "./Parallax.css";
 
 const CONTENT_TYPE = {
   img: ({ url, alt }) => (
-    <div
-      className="parallaxSection"
-      style={{ backgroundImage: `url(${url})` }}
-      alt={alt}
-    ></div>
+    <div key={url}>
+      {/* <img src={url} alt={alt} /> */}
+      <div
+        className="parallaxSection"
+        style={{ backgroundImage: `url(${url})` }}
+        alt={alt}
+        loading="lazy"
+      ></div>
+    </div>
   ),
-  text: ({ message }) => <div className="block">{message}</div>,
+  text: ({ message }) => (
+    <div key={message} className="block">
+      {message}
+    </div>
+  ),
 };
 
-const FOURTH_YEAR = [
-  { type: "img", url: "forest.jpg", alt: "Forest, so magical" },
-  { type: "text", message: "Forest, so magical" },
-
-  { type: "img", url: "mountain.jpg", alt: "Mountain, how majestic" },
-  { type: "text", message: "Mountain, how majestic" },
-
-  { type: "img", url: "wasaga3.jpg", alt: "Mountain, how majestic" },
-  { type: "text", message: "Mountain, how majestic" },
-
-  { type: "img", url: "us1.jpg", alt: "Mountain, how majestic" },
-  { type: "text", message: "Mountain, how majestic" },
-];
-
-const Parallax = ({ content = FOURTH_YEAR }) => {
+const Parallax = ({ content = AnniversaryPhotoData }) => {
   return (
     <div className="parallaxContent">
-      {content.map((c) => (
-        <div key={`${c.url}`}>{CONTENT_TYPE[c.type](c)}</div>
-      ))}
+      {content.map((c) => CONTENT_TYPE[c.type](c))}
     </div>
   );
 };

@@ -13,9 +13,9 @@ const Root = () => {
             <li>
               <Link to={`us`}>Us</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={`gallery`}>Gallery</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <h1>Homepage</h1>
